@@ -1,0 +1,138 @@
+/* App.js */
+.MainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./assets/wheat-background.jpg');
+  background-size: cover; /* Cover the entire container */
+  background-position: center;
+}
+
+
+/*
+ Components 
+*/
+
+/* FileUploader.jsx */
+.UploadFile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FileUploaderDiv {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  background-color: #fdfcfc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 10); 
+  border: dashed 2px #4e4e4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 100px;
+  width: max-content;
+  height: max-content;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration-color: #1C274C;
+  font-size: large;
+  font-weight: 600;
+}
+
+.uploadIMG {
+  width: 50px;
+  height: 50px;
+}
+
+.uploadedDataInfoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+p {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+/* button */
+.submitButton {
+  align-items: center;
+  appearance: none;
+  background-color: #fdfcfc;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.submitButton:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.submitButton:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.submitButton:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.submitButton:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.submitButton:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.submitButton:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.submitButton:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.submitButton:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.ptagDisease {
+  font-size: large;
+  font-weight: bold;
+  color: #fdfcfc;
+}
