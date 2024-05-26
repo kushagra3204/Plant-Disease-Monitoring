@@ -44,7 +44,7 @@ const FileUploader = () => {
         const formData = new FormData();
         formData.append('file', file);
 
-        fetch('/predict ', {
+        fetch('https://plant-disease-monitoring.onrender.com/predict ', {
             method: 'POST',
             body: formData
         })
