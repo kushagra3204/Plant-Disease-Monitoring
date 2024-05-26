@@ -3,7 +3,6 @@ Gunicorn
 keras
 tensorflow
 numpy
-os
 Werkzeug
 matplotlib
 sklearn
