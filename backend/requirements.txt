@@ -7,3 +7,4 @@ Werkzeug
 matplotlib
 scikit-learn
 flask-cors
+waitress

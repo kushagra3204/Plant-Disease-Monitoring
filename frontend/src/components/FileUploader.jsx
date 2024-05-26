@@ -4,20 +4,23 @@ import "../App.css";
 
 const FileUploader = () => {
     const [file, setFile] = useState(null);
-    const [diseaseFound,setDisease] = useState('None');
+    const [diseaseFound, setDisease] = useState('None');
     const fileInputRef = useRef(null);
     
     const handleDragOver = (e) => {
         e.preventDefault();
-    };    
+    };
+    
     const handleClick = () => {
         fileInputRef.current.click();
     };
+    
     const handleDrop = (e) => {
         e.preventDefault();
         const uploadedFile = e.dataTransfer.files[0];
         setFile(uploadedFile);
     };
+    
     const downloadFile = () => {
         if (file) {
           const url = URL.createObjectURL(file);
@@ -30,9 +33,11 @@ const FileUploader = () => {
           document.body.removeChild(a);
         }
     };
+    
     const handleDeleteFile = () => {
         setFile(null);
-    };    
+    };
+    
     const handleFileInputChange = (e) => {
         if (e.target.files.length > 0) {
           const uploadedFile = e.target.files[0];
@@ -41,10 +46,15 @@ const FileUploader = () => {
     };
     
     const handleSubmit = () => {
+        if (!file) {
+            alert('Please upload a file first!');
+            return;
+        }
+
         const formData = new FormData();
         formData.append('file', file);
-        console.log(formData);
-        fetch('https://plant-disease-monitoring.onrender.com/predict ', {
+
+        fetch('http://localhost:5000/predict', {  // Ensure the URL matches your Flask server
             method: 'POST',
             body: formData
         })
@@ -79,7 +89,7 @@ const FileUploader = () => {
                             <p>Click to Browse or Drop the file</p>
                         </div>
                     )}
-                <input type='file' ref={fileInputRef} onChange={handleFileInputChange} alt="sc" accept="image/*" className="FileUploaderDiv" style={{display: 'none'}}/>
+                <input type='file' ref={fileInputRef} onChange={handleFileInputChange} accept="image/*" className="FileUploaderDiv" style={{display: 'none'}}/>
             </div>
             <input type='submit' value='Upload' className="submitButton" onClick={handleSubmit}/>
             <p className="ptagDisease">Disease Found: {diseaseFound}</p>
