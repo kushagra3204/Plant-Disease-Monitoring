@@ -1,11 +1,16 @@
 from werkzeug.utils import secure_filename
 from predict import classify_image
 from flask import Flask, request
+from flask_cors import CORS, cross_origin
 import os
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
 
 @app.route('/predict',methods=['POST'])
+@cross_origin()
 def upload():
 
     if 'file' not in request.files:

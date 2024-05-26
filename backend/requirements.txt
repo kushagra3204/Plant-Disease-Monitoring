@@ -6,3 +6,4 @@ numpy
 Werkzeug
 matplotlib
 scikit-learn
+flask-cors

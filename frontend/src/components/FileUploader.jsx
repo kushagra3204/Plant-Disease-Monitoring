@@ -46,6 +46,9 @@ const FileUploader = () => {
 
         fetch('https://plant-disease-monitoring.onrender.com/predict ', {
             method: 'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
             body: formData
         })
         .then(response => {
