@@ -5,5 +5,4 @@ tensorflow
 numpy
 Werkzeug
 matplotlib
-sklearn
-seaborn
+scikit-learn
