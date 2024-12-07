@@ -53,8 +53,8 @@ const FileUploader = () => {
 
         const formData = new FormData();
         formData.append('file', file);
-
-        fetch('http://localhost:5000/predict', {  // Ensure the URL matches your Flask server
+        const apiPath = process.env.REACT_APP_BACKEND_LINK;
+        fetch(apiPath+'/predict', {  // Ensure the URL matches your Flask server
             method: 'POST',
             body: formData
         })
