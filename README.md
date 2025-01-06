@@ -7,6 +7,46 @@ Revolutionizing sustainable agriculture, this project empowers farmers and resea
 - **Created** a real-time disease identification dashboard, reducing diagnosis time and cutting crop loss.
 - **Leveraged AI** to provide detailed disease insights and user feedback, refining diagnosis precision and enabling timely interventions.
 
+## About the Dataset
+
+### Wheat Plant Diseases Dataset
+#### <a href="https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases">Dataset Link</a>
+```
+https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases
+```
+This dataset is designed to empower researchers and developers in creating robust machine learning models for classifying various wheat plant diseases. It offers a collection of high-resolution images showcasing real-world wheat diseases without the use of artificial augmentation techniques.
+
+#### Content
+- **Number of Images:** 14,155
+- **Image Quality:** High-resolution images
+- **Disease Classes:**
+    - Aphid [Pest]
+    - Mite [Pest]
+    - Stem Fly [Pest]
+    - Rusts
+        - Black Rust / Stem Rust
+        - Brown Rust / Leaf Rust
+        - Yellow Rust / Stripe Rust
+    - Smut (Loose, Flag)
+    - Common Root Rot
+    - Helminthosporium Leaf Blight / Leaf Blight
+    - Wheat Blast
+    - Fusarium head blight / Scab
+    - Septoria Leaf Blotch
+    - Spot Blotch
+    - Tan Spot
+    - Powdery Mildew
+
+#### Disease Cause and Monitoring Information
+- **Wheat Disease Cause:** Wheat plants can contract diseases from various sources, including fungi, bacteria, viruses, and environmental conditions.
+- **Disease Monitoring Using Images:** This guide provides valuable information on leveraging visual inspection of wheat plants and dataset images for disease identification.
+
+#### Benefits
+- **Large and Diverse:** With over 14,155 high-quality images, the dataset provides a substantial foundation for training and testing machine learning models.
+- **Real-world Images:** The absence of artificial augmentation ensures the images represent natural variations of diseases, leading to improved model generalizability.
+- **Comprehensive Disease Coverage:** The inclusion of a wide range of wheat disease types allows for the development of models that can identify a broad spectrum of threats.
+- **Monitoring Guidance:** The additional information on disease causes and image-based monitoring empowers users to leverage the dataset for practical applications in real-world scenarios.
+
 ## Directory Structure
 ```
 kushagra3204-Plant-Disease-Monitoring/
@@ -52,46 +92,6 @@ kushagra3204-Plant-Disease-Monitoring/
 │       └── index.js
 └── README.md
 ```
-
-## About the Dataset
-
-### Wheat Plant Diseases Dataset
-#### Dataset Link
-```
-https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases
-```
-This dataset is designed to empower researchers and developers in creating robust machine learning models for classifying various wheat plant diseases. It offers a collection of high-resolution images showcasing real-world wheat diseases without the use of artificial augmentation techniques.
-
-#### Content
-- **Number of Images:** 14,155
-- **Image Quality:** High-resolution images
-- **Disease Classes:**
-    - Aphid [Pest]
-    - Mite [Pest]
-    - Stem Fly [Pest]
-    - Rusts
-        - Black Rust / Stem Rust
-        - Brown Rust / Leaf Rust
-        - Yellow Rust / Stripe Rust
-    - Smut (Loose, Flag)
-    - Common Root Rot
-    - Helminthosporium Leaf Blight / Leaf Blight
-    - Wheat Blast
-    - Fusarium head blight / Scab
-    - Septoria Leaf Blotch
-    - Spot Blotch
-    - Tan Spot
-    - Powdery Mildew
-
-#### Disease Cause and Monitoring Information
-- **Wheat Disease Cause:** Wheat plants can contract diseases from various sources, including fungi, bacteria, viruses, and environmental conditions.
-- **Disease Monitoring Using Images:** This guide provides valuable information on leveraging visual inspection of wheat plants and dataset images for disease identification.
-
-#### Benefits
-- **Large and Diverse:** With over 14,155 high-quality images, the dataset provides a substantial foundation for training and testing machine learning models.
-- **Real-world Images:** The absence of artificial augmentation ensures the images represent natural variations of diseases, leading to improved model generalizability.
-- **Comprehensive Disease Coverage:** The inclusion of a wide range of wheat disease types allows for the development of models that can identify a broad spectrum of threats.
-- **Monitoring Guidance:** The additional information on disease causes and image-based monitoring empowers users to leverage the dataset for practical applications in real-world scenarios.
 
 ## Steps to Run the Code
 
