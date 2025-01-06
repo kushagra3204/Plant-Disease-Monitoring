@@ -10,7 +10,7 @@ Revolutionizing sustainable agriculture, this project empowers farmers and resea
 ## About the Dataset
 
 ### Wheat Plant Diseases Dataset
-#### <a href="https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases">Dataset Link</a>
+#### <a target="_blank" href="https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases">Dataset Link</a>
 ```
 https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases
 ```
